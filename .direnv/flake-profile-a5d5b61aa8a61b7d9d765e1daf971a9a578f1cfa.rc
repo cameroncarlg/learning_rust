@@ -207,7 +207,7 @@ name='nix-shell-env'
 export name
 nativeBuildInputs='/nix/store/6f2cq2b1c9mlf39zbhfjjdkc2zl06fkh-rust-default-1.86.0 /nix/store/vp2wfm5dm63r9mh6ywpax101m0axvplx-openssl-3.4.1-dev /nix/store/zhn5jlkzsm6ak9fizzqifv1riqxfhq9m-pkg-config-wrapper-0.29.2 /nix/store/5czki2xsm7vxxajw17pqvsmy8xg0p5yq-cargo-deny-0.18.2 /nix/store/wvp7n80z83ag8dz1ig160i20ldmwblmv-cargo-edit-0.13.3 /nix/store/4grsf882hg84cvdg7mchlk790m32wx8a-cargo-watch-8.5.3 /nix/store/62ml5s0i5kynznhs0rl9rc9n4rka869k-rust-analyzer-2025-05-05'
 export nativeBuildInputs
-out='/Users/cameron/rust/prac/outputs/out'
+out='/Users/cameron/rust/learning_rust/outputs/out'
 export out
 outputBin='out'
 outputDev='out'
@@ -238,7 +238,7 @@ preConfigurePhases=' updateAutotoolsGnuConfigScriptsPhase'
 declare -a preFixupHooks=('_moveToShare' '_multioutDocs' '_multioutDevs' )
 preferLocalBuild='1'
 export preferLocalBuild
-prefix='/Users/cameron/rust/prac/outputs/out'
+prefix='/Users/cameron/rust/learning_rust/outputs/out'
 declare -a propagatedBuildDepFiles=('propagated-build-build-deps' 'propagated-native-build-inputs' 'propagated-build-target-deps' )
 propagatedBuildInputs=''
 export propagatedBuildInputs
