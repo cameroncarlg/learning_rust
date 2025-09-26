@@ -1,0 +1,4 @@
+var searchIndex = new Map(JSON.parse('[["enumz",{"t":"GPPNNNNNHNNN","n":["IpAddr","V4","V6","borrow","borrow_mut","fmt","from","into","main","try_from","try_into","type_id"],"q":[[0,"enumz"],[12,"core::fmt"],[13,"core::result"],[14,"core::any"]],"i":"`f000000`000","f":"```{b{{b{c}}}{}}{{{b{d}}}{{b{dc}}}{}}{{{b{f}}{b{dh}}}j}{cc{}}{{}c{}}{{}l}{c{{n{e}}}{}{}}{{}{{n{c}}}{}}{bA`}","D":"d","p":[[1,"reference",null,null,1],[0,"mut"],[6,"IpAddr",0],[5,"Formatter",12],[8,"Result",12],[1,"unit"],[6,"Result",13,null,1],[5,"TypeId",14]],"r":[],"b":[],"c":"OjAAAAAAAAA=","e":"OzAAAAEAAAoAAgAAAAYACQADAA==","P":[[3,"T"],[5,""],[6,"T"],[7,"U"],[8,""],[9,"U,T"],[10,"U"],[11,""]]}]]'));
+if (typeof exports !== 'undefined') exports.searchIndex = searchIndex;
+else if (window.initSearch) window.initSearch(searchIndex);
+//{"start":39,"fragment_lengths":[632]}
