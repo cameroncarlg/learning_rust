@@ -2,7 +2,7 @@ use std::io::{self, Write};
 
 fn temp_conv(s: String) -> String {
     const NUM_32: f32 = 32.0;
-    if s.len() < 10 {
+    if s.len() > 10 {
         return "Your number is not valid, run the program again.".to_string();
     } else {
         //println!("{}", s.len());
@@ -35,6 +35,7 @@ fn main() {
     io::stdin()
         .read_line(&mut input)
         .expect("Failed to read line");
+    println!();
     println!();
 
     //println!("Here's your input len: {}", input.trim().len());
