@@ -35,14 +35,12 @@ fn main() {
     io::stdin()
         .read_line(&mut input)
         .expect("Failed to read line");
-    println!();
-    println!();
 
     //println!("Here's your input len: {}", input.trim().len());
     //let parsed_string = temp_conv(input);
     //println!("Your converted temperature is: {parsed_string}");
 
-    temp_conv(input);
+    println!("{}", temp_conv(input));
 
     //let temp1 = String::from("45F");
     //let temp2 = String::from("32C");
