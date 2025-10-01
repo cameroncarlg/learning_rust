@@ -18,10 +18,11 @@ fn main() {
     // Rusts range() loops like the following: start...end
     // Outer loops will loop from 0 - 12, noninclusive
     for i in 0..lyrics.len() {
-        println
+        println!("On the {} day of Christmas,", i + 1);
+        println!("my true love gave to me");
         for j in 0..i + 1 {
             println!("{}", lyrics[j]);
         }
-        println!("{i}");
+        println!();
     }
 }
