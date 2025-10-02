@@ -16,12 +16,12 @@ const LYRICS: [&str; 12] = [
 // Return a string slice that lives for the entire program run.
 // &'statuc str -> reference to UTF-8 data baked into the binary
 // (no allocation, no lifetime worries)
-fn ordinal(n: usize) -> &'static str {
+fn ordinal(n: usize) -> String {
     match n {
-        1 => "1st",
-        2 => "2nd",
-        3 => "3rd",
-        4..20 => "th",
+        1 => "1st".to_string(),
+        2 => "2nd".to_string(),
+        3 => "3rd".to_string(),
+        4..20 => format!("{}th", n),
         _ => unreachable!(),
     }
 }
@@ -36,8 +36,12 @@ fn main() {
         // 11 - day ... 11 is the slice we need from the constant array.
         // .rev() makes us start with the highest-numbered gift and walk
         // backwards to index 11-day (inclusive)
-        for gift_idx in (11 - day..12).rev() {
-            println!("{}.", LYRICS[gift_idx]);
+        for gift_idx in 11 - day..12 {
+            if day != 0 && gift_idx == 10 {
+                println!("{} and", LYRICS[gift_idx]);
+            } else {
+                println!("{}", LYRICS[gift_idx]);
+            }
         }
         println!();
     }
