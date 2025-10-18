@@ -1,0 +1,7 @@
+[package]
+name = "package_crates"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+my_lib = { path = "./resturant" }
