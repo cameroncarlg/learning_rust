@@ -1,1 +1,1 @@
-/Users/cameron/rust/learning_rust/guessing_game/target/debug/guessing_game: /Users/cameron/rust/learning_rust/guessing_game/src/main.rs
+/Users/cameron/rust/learning_rust/guessing_game/target/debug/guessing_game: /Users/cameron/rust/learning_rust/guessing_game/src/guess/mod.rs /Users/cameron/rust/learning_rust/guessing_game/src/main.rs

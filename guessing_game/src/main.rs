@@ -1,3 +1,5 @@
+mod guess;
+use guess::Guess;
 use rand::Rng;
 use std::io::{self, Write};
 
@@ -22,9 +24,11 @@ fn main() {
             }
         };
 
-        match n {
-            n if n > rand_num => println!("Too high! Guess again..."),
-            n if n < rand_num => println!("Too low! Guess again..."),
+        let guess = Guess::new(n);
+
+        match guess {
+            n if n.value() > rand_num => println!("Too high! Guess again..."),
+            n if n.value() < rand_num => println!("Too low! Guess again..."),
             _ => {
                 println!();
                 println!("You win!");
