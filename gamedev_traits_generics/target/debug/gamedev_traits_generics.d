@@ -1,0 +1,1 @@
+/Users/cameron/rust/learning_rust/gamedev_traits_generics/target/debug/gamedev_traits_generics: /Users/cameron/rust/learning_rust/gamedev_traits_generics/classes/src/lib.rs /Users/cameron/rust/learning_rust/gamedev_traits_generics/src/main.rs

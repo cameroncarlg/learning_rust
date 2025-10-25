@@ -1,17 +1,22 @@
+// We can use a default value for the trait by passing in a method
+// and calling 'impl Summary for Article {}'
 pub trait Summary {
-    fn summarize(&self) -> String;
+    fn summarize_author(&self) -> String;
+
+    fn summarize(&self) -> String {
+        format!("(Read more from {}...)", self.summarize_author())
+    }
 }
 
-pub struct Article {
-    pub author: String,
-    pub title: String,
-    pub content: String,
-    pub location: String,
+impl Summary for SocialMediaPost {
+    fn summarize_author(&self) -> String {
+        format!("@{}", self.username)
+    }
 }
 
 impl Summary for Article {
-    fn summarize(&self) -> String {
-        format!("{}, by {} ({})", self.title, self.author, self.location)
+    fn summarize_author(&self) -> String {
+        format!("{} located at {}", self.author, self.location)
     }
 }
 
@@ -22,8 +27,9 @@ pub struct SocialMediaPost {
     pub repost: bool,
 }
 
-impl Summary for SocialMediaPost {
-    fn summarize(&self) -> String {
-        format!("{}, {}", self.username, self.content)
-    }
+pub struct Article {
+    pub author: String,
+    pub title: String,
+    pub content: String,
+    pub location: String,
 }

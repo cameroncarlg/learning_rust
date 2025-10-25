@@ -1,0 +1,7 @@
+[package]
+name = "gamedev_traits_generics"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+classes = { path = "./classes" }
