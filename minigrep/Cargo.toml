@@ -1,0 +1,9 @@
+[package]
+name = "minigrep"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+
+[dependencies]
+greplib = { path = "greplib" }
