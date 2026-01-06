@@ -1,7 +1,7 @@
 use std::env;
 use std::process;
 
-use greplib::Config;
+use greplib::*;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
